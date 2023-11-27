@@ -4,15 +4,18 @@ function BookDisplay({ book }) {
     // by just using book, instead of props.book
 
     const loaded = () => {
+        //console.log(book.items[0].volumeInfo.title);
         return (
             <>
-                <h1>{book.Title}</h1>
-                <h2>{book.Thumbnail}</h2>
-                <Ratings
+
+                <h3>{book.items.map((onebook)=>onebook.volumeInfo.title )}</h3>
+                {/* <h3>{book.items.mao((sbook)=>sbook.volumeInfo.subtitle)}</h3> */}
+                {/* <h2>{book.Thumbnail}</h2> */}
+                {/* <>
                 {book.Ratings.map (rating => {
                     return (<><h4>{rating.Source}</h4>
                     <h4>{rating.Value}</h4></>)
-                })  }
+                })  } */}
             </>
         )
     }
@@ -21,6 +24,7 @@ function BookDisplay({ book }) {
     }
     //The component must return some JSX
     return book ? loaded() : loading();
+    
 
 }
 

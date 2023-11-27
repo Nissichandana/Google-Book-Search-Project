@@ -10,10 +10,10 @@ function App() {
   const [book, setBook] = useState(null);
 
   // Function getBook
-  const getBook = async (searchTerm) => {
+  const getBook = async (searchTitle) => {
     // create a variable that combines the parts of the url into one
     const baseUrl = "https://www.googleapis.com/books/v1/volumes";
-    const url = baseUrl + "?" + "q=" + searchTerm;
+    const url = baseUrl + "?" + "q=" + searchTitle;
     // make fetch request and store response
     try {
       // fetch with the url, returns the same thing as when i put that url in the address bar
@@ -28,14 +28,18 @@ function App() {
   };
   //This will run on the first render but not on subsquent renders
   useEffect(() => {
-    getBook();
+    const bookArray = ["Clueless", "Mulan", "lilo & stitch", "batman", "air bud"];
+      const firstBook = bookArray[Math.floor(Math.random() * bookArray.length)];
+    getBook(firstBook);
   }, []);
 
   console.log(book);
   return (
     <>
-      {/* <Form booksearch={getBook} />
-      <BookDisplay book={book} /> */}
+      <Form booksearch={getBook} />
+      {book ?  <BookDisplay book={book} /> : 'NO DATA'} 
+     
+
     </>
   );
 }

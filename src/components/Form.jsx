@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function Form(props) {
   const [formData, setFormData] = useState({
-    searchterm: "",
+    searchtitle: "",
   });
 
   //handleChange - updates formData when we type into form
@@ -12,7 +12,7 @@ function Form(props) {
   };
 
   const handleSubmit = (event) => {
-    // prevent page from refreshing on form submissin
+    // prevent page from refreshing on form submissiOn
     event.preventDefault();
 
     // pass the search term to moviesearch prop (the method that will search)
@@ -32,7 +32,7 @@ function Form(props) {
               value={formData.searchtitle}
             />
           </p>
-          <p>
+          {/* <p>
             Author:{" "}
             <input
               type="text"
@@ -53,7 +53,7 @@ function Form(props) {
               <option>paid-ebooks</option>
               <option>ebooks</option>
             </select>
-          </p>
+          </p> */}
           <input type="submit" value="retrieve books" />
         </form>
       </div>
