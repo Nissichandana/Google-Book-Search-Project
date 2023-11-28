@@ -9,20 +9,25 @@ function BookDisplay({ book }) {
     //console.log(book.items[0].volumeInfo.title);
     //console.log(book.items[0].imageLinks.thumbnail)
     return (
-      <div>
-        <table>
-          <tr>
+      <div className="list">
+        {/* <table> */}
+  {/* <tr> */}
             {book.map((onebook) => {
               //   console.log(onebook);
               return (
-                <>
-                  <td><img src={onebook.volumeInfo.imageLinks.thumbnail} alt={onebook.volumeInfo.title} />
-                  <h5>{onebook.volumeInfo.title}</h5></td>
-                </>
+                <div className="book" key={onebook.id}>
+                  <img src={onebook.volumeInfo.imageLinks?.thumbnail} alt={onebook.volumeInfo.title}/>
+                  <h5>{onebook.volumeInfo.title}</h5>
+                  <p>{onebook.searchInfo?.textSnippet}</p>
+                  {/* <a href={onebook.accessInfo.webReaderLink}>webLinks</a> */}
+                  {onebook.saleInfo?.buyLink && (
+                    <a href={onebook.saleInfo.buyLink}>webBuy</a>
+                  )}
+                </div>
               );
             })}
-          </tr>
-        </table>
+          {/* </tr> */}
+         {/* </table> */}
         {/* <img src={book.items[0].imageLinks.thumbnail} alt={book.Title} /> */}
 
         {/* <h3>{book.items.mao((sbook)=>sbook.volumeInfo.subtitle)}</h3> */}

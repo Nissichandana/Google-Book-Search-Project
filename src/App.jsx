@@ -12,7 +12,7 @@ function App() {
   // Function getBook
   const getBook = async (searchTitle) => {
     // create a variable that combines the parts of the url into one
-    const baseUrl = "https://www.googleapis.com/books/v1/volumes?maxResults=5";
+    const baseUrl = "https://www.googleapis.com/books/v1/volumes?maxResults=25";
     const url = baseUrl + "&" + "q=+intitle:" + searchTitle;
     //console.log(url);
     // make fetch request and store response
