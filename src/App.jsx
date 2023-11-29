@@ -4,6 +4,10 @@ import BookDisplay from "./components/BookDisplay";
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
 import "./App.css";
+import Nav from "./components/Nav";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import {Route,Routes} from "react-router-dom"
 
 function App() {
   // create state to hold the book data
@@ -31,14 +35,24 @@ function App() {
   };
   //This will run on the first render but not on subsquent renders
   useEffect(() => {
-    const bookArray = ["Clueless", "Mulan", "batman", "amazon"];
+    const bookArray = ["MongoDB", "JavaScript", "CSS", "HTML", "React"];
       const firstBook = bookArray[Math.floor(Math.random() * bookArray.length)];
     getBook(firstBook);
   }, []);
 
   //console.log(book);
   return (
+   
     <>
+     <Nav/>
+     <br></br>
+     <br></br>
+     <br></br>
+     <Routes>
+      
+      <Route path='/home' element={<Home/>} />
+      <Route path='/about' element={<About/>} />
+      </Routes>
       <Form booksearch={getBook} />
       <li>
       {book ?  <BookDisplay book={book} /> : 'NO DATA'} 

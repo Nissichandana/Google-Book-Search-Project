@@ -30,9 +30,10 @@ function Form(props) {
               name="searchtitle"
               onChange={handleChange}
               value={formData.searchtitle}
+              placeholder="search"
             />
           </p>
-          {/* <p>
+          {/* {/* <p>
             Author:{" "}
             <input
               type="text"
@@ -40,8 +41,8 @@ function Form(props) {
               onChange={handleChange}
               value={formData.searchauthor}
             />
-          </p>
-          <p>
+          </p> */}
+          {/* <p>
             Book Type:{" "}
             <select
               name="searchbooktype"
@@ -53,8 +54,10 @@ function Form(props) {
               <option>paid-ebooks</option>
               <option>ebooks</option>
             </select>
-          </p> */}
-          <input type="submit" value="retrieve books" />
+          </p>  */}
+          <div className="center">
+          <input type="submit" value="Submit" />
+          </div>
         </form>
       </div>
     </>
