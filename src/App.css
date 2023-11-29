@@ -31,8 +31,28 @@
 .center{
   margin: 0;
   position: absolute;
-  top: 11%;
+  top: 12.5%;
   left: 15%;
 
+
+}
+.abt{
+  background-color: blue;
+  margin-top:300px ;
+
+}
+.hom{
+  /* background-image: -moz-repeating-linear-gradient(yellow,orange); */
+  margin-top: 200px;
+}
+.container{
+  max-width: 1500px;
+  /* max-height: 1000px; */
+  max-height: 500px;
+  position: relative;
+   top: 50px;
+  margin: auto;
+  background-color: blue;
+  padding-bottom: 400px;
 
 }

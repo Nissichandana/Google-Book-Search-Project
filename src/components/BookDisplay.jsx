@@ -20,7 +20,7 @@ function BookDisplay({ book }) {
                   <h5>{onebook.volumeInfo.title}</h5>
                   <p>{onebook.searchInfo?.textSnippet}</p>
                   {/* <a href={onebook.accessInfo.webReaderLink}>webLinks</a> */}
-                  {onebook.saleInfo?.buyLink && (
+                  {onebook.saleInfo.buyLink && (
                     <a href={onebook.saleInfo.buyLink}>webBuy</a>
                   )}
                 </div>
