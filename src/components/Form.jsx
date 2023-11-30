@@ -16,7 +16,7 @@ function Form(props) {
     event.preventDefault();
 
     // pass the search term to moviesearch prop (the method that will search)
-    props.booksearch(formData.searchtitle);
+  props.booksearch(formData.searchtitle);
   };
 
   return (
