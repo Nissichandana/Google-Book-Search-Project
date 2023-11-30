@@ -7,7 +7,7 @@ I used useEffect to render books from the array randomly.
 I used State to insert the data retrieved and display it on the screen.
 I used a free API 
 
-![Alt text](\src\assets\wireframe-img-mod2.jpg)
+![Alt text](src\assets\wireframe-img-mod2.jpg)
 
 
 
