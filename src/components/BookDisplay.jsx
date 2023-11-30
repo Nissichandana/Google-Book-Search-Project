@@ -21,7 +21,7 @@ function BookDisplay({ book }) {
                   <p>{onebook.searchInfo?.textSnippet}</p>
                   {/* <a href={onebook.accessInfo.webReaderLink}>webLinks</a> */}
                   {onebook.saleInfo.buyLink && (
-                    <a href={onebook.saleInfo.buyLink}>webBuy</a>
+                    <a href={onebook.saleInfo.buyLink}>Free-ebook</a>
                   )}
                 </div>
               );

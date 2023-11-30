@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 function Nav() {
   return (
       <div className="nav">
-          {/* <Link to="/home">
+          <Link to="/home">
               <h1>Home</h1>
-          </Link> */}
+          </Link>
 
-          {/* <Link to="/about">
+          <Link to="/about">
               <h1>About</h1>
-          </Link> */}
+          </Link>
 
          
 
