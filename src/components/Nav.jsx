@@ -15,7 +15,7 @@ function Nav() {
 
          
 
-           <Link to="./BookList"> 
+           <Link to="/"> 
               <h1>BookSearch</h1>
           </Link>
       </div>

@@ -5,8 +5,8 @@
 //import viteLogo from '/vite.svg'
 import "./App.css";
 import Nav from "./components/Nav";
-import Home from "./pages/Home";
-import About from "./pages/About";
+// import Home from "./pages/Home";
+// import About from "./pages/About";
 import {Route,Routes} from "react-router-dom"
 import BookList from "./pages/BookList";
 
@@ -23,9 +23,9 @@ function App() {
      <br></br>
      <Routes>
       
-      <Route path='/home' element={<Home/>} />
-      <Route path='/about' element={<About/>} />
-      <Route path="/BookList" element={<BookList/>} />
+      {/* <Route path='/home' element={<Home/>} /> */}
+      {/* <Route path='/about' element={<About/>} /> */}
+      <Route path="/" element={<BookList/>} />
       </Routes>
      
     </>
