@@ -7,7 +7,7 @@ I used useEffect to render books from the array randomly.
 I used State to insert the data retrieved and display it on the screen.
 I used a free API 
 
-![Alt text]("C:\Users\Nissi James\Desktop\TWOC6\MOD2\mod2-project\Book-Search-Project-Mod2\mod2-Project\src\assets\wireframe-img-mod2.jpg")
+![Alt text](C:\Users\Nissi James\Desktop\TWOC6\MOD2\mod2-project\Book-Search-Project-Mod2\mod2-Project\src\assets\wireframe-img-mod2.jpg)
 
 
 
