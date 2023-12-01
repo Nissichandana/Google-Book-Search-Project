@@ -23,6 +23,8 @@ function Form(props) {
     <>
       <div>
         <form onSubmit={handleSubmit}>
+          <br></br>
+          <br></br>
           <p>
             Title:{" "}
             <input
@@ -31,7 +33,7 @@ function Form(props) {
               onChange={handleChange}
               value={formData.searchtitle}
               placeholder="search"
-            />
+            /><input type="submit" value="Submit" />
            
           </p>
           {/* {/* <p>
@@ -56,9 +58,7 @@ function Form(props) {
               <option>ebooks</option>
             </select>
           </p>  */}
-          <div className="center">
-          <input type="submit" value="Submit" />
-          </div>
+
         </form>
       </div>
     </>
